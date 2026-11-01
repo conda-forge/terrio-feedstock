@@ -14,7 +14,7 @@ source:
   sha256: 424818a3844e9b415c928aa2eb8bf9712bd3b57a34cb1cc23f5fb0fb56c47080
 
 build:
-  number: 0
+  number: 1
   skip: is_abi3 and not is_python_min
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
@@ -77,9 +77,9 @@ tests:
         then: abi3audit %SP_DIR%/terrio/_terrio.pyd -s -v --assume-minimum-abi3 ${{ python_min }}
 
 about:
-  homepage: https://terrio.opengeos.org
+  homepage: https://terrio.dev
   repository: https://github.com/opengeos/terrio
-  documentation: https://terrio.opengeos.org
+  documentation: https://terrio.dev
   summary: Pure-Rust geospatial raster, vector and point cloud data I/O, without GDAL
   description: |
     terrio reads, writes, converts and reprojects the geospatial raster, vector and point cloud
