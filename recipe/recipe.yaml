@@ -14,7 +14,7 @@ source:
   sha256: 089ce7274f88fe2b5998aed565be5e513bc74c325488bea0fe91aecbb55b2e1c
 
 build:
-  number: 0
+  number: 1
   skip: is_abi3 and not is_python_min
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
